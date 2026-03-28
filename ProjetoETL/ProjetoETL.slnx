@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Greet/Greet.fsproj" />
+  <Project Path="Main/Main.fsproj" />
+</Solution>

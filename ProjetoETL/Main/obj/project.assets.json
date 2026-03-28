@@ -55,6 +55,19 @@
             "locale": "zh-Hant"
           }
         }
+      },
+      "Greet/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "FSharp.Core": "10.0.103"
+        },
+        "compile": {
+          "bin/placeholder/Greet.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Greet.dll": {}
+        }
       }
     }
   },
@@ -100,11 +113,17 @@
         "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll"
       ]
+    },
+    "Greet/1.0.0": {
+      "type": "project",
+      "path": "../Greet/Greet.fsproj",
+      "msbuildProject": "../Greet/Greet.fsproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "FSharp.Core >= 10.0.103"
+      "FSharp.Core >= 10.0.103",
+      "Greet >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -132,7 +151,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/cuzo/Projeto_ETL/ProjetoETL/Greet/Greet.fsproj": {
+              "projectPath": "/home/cuzo/Projeto_ETL/ProjetoETL/Greet/Greet.fsproj"
+            }
+          }
         }
       },
       "restoreAuditProperties": {
