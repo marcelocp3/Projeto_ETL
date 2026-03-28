@@ -54,12 +54,8 @@ Este projeto foi desenvolvido com o auxílio do assistente Gemini. A IA foi util
 
 Como Executar:
 
-    Na pasta raiz do projeto, execute:
-    
-    ``` bash
+Na pasta raiz do projeto, execute:
 
     dotnet run --project Main
-
-    ```
-
-    O resultado será gerado no arquivo output.csv.
+    
+O resultado será gerado no arquivo output.csv.
